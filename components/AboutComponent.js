@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Text, ScrollView, FlatList } from "react-native";
-import { Card } from "react-native-elements";
-import { ListItem } from "react-native-elements";
+import { ListItem, Card } from "react-native-elements";
 import { PARTNERS } from "../shared/partners";
 
 function Mission() {
@@ -45,7 +44,7 @@ class About extends Component {
     return (
       <ScrollView>
         <Mission />
-        <Card featuredTitle="Community Partners">
+        <Card title="Community Partners">
           <FlatList
             data={this.state.partners}
             renderItem={renderPartner}
